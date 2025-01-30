@@ -93,9 +93,26 @@
     /*------------------
         Scroll To Top
     --------------------*/
-    $("#scrollToTopButton").click(function() {
-        $("html, body").animate({ scrollTop: 0 }, "slow");
+    $("#scrollToTopButton").click(function () {
+        $("html, body").animate({scrollTop: 0}, "slow");
         return false;
-     });
+    });
 
 })(jQuery);
+
+window.onload = function () {
+
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        centeredSlides: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        }
+    });
+
+}

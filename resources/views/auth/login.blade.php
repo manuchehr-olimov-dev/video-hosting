@@ -21,14 +21,23 @@
                 <div class="col-lg-6">
                     <div class="login__form">
                         <h3>Войти</h3>
-                        <form action="#">
+                        <form action="{{ route("login") }}" method = "POST">
+                            @csrf
                             <div class="input__item">
-                                <input type="text" placeholder="Ваша почта.">
+                                <input type="text" name="email" placeholder="Ваша почта." value="{{ old("email") }}">
                                 <span class="icon_mail"></span>
                             </div>
                             <div class="input__item">
-                                <input type="text" placeholder="Пароль">
+                                <input type="password" name = "password" placeholder="Пароль" value="{{ old("password") }}">
                                 <span class="icon_lock"></span>
+                            </div>
+                            <div>
+                                @if($errors->any())
+                                    <p class = " text-white w-72">{{ $errors->first() }}</p>
+                                @endif
+                                @if($message ?? "")
+                                    <p class="outline">{{ $message }}</p>
+                                @endif
                             </div>
                             <button type="submit" class="site-btn">Войти сейчас</button>
                         </form>

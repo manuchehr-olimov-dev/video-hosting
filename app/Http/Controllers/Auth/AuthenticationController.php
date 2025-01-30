@@ -15,12 +15,13 @@ use Illuminate\Http\Request;
 class AuthenticationController extends Controller
 {
     private $authService;
+
     public function __construct(AuthenticationService $authService){
         $this->authService = $authService;
     }
 
-    public function loginPage(): View|Factory|Application { return view('login'); }
-    public function registrationPage(): View|Factory|Application { return view('registration'); }
+    public function loginPage(): View|Factory|Application { return view('auth.login'); }
+    public function registrationPage(): View|Factory|Application { return view('auth.registration'); }
 
     public function login(LoginRequest $request): string|RedirectResponse {
         return $this->authService->login($request);

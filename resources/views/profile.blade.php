@@ -26,7 +26,9 @@
                     </div>
                     <div class="button mt-2 d-flex flex-row align-items-center">
                         <button class="btn btn-sm btn-outline-primary w-100">Кнопка</button>
-                        <button class="btn btn-sm btn-outline-danger w-100 ml-2">Выйти</button>
+                        <a href="{{ route("logout") }}">
+                            <button class="btn btn-sm btn-outline-danger w-100 ml-2">Выйти</button>
+                        </a>
                     </div>
                 </div>
             </div>

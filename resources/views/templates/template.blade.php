@@ -22,7 +22,9 @@
     <link rel="stylesheet" href="css/nice-select.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
 </head>
 
 <body>
@@ -37,16 +39,16 @@
         <div class="row">
             <div class="col-lg-2">
                 <div class="header__logo">
-                    <a href="{{ route("homepage") }}">
-                        AnimeBlog
+                    <a href="{{ route("homepage") }}" class="h-2">
+                        <b>AnimeWatch</b>
                     </a>
                 </div>
             </div>
             <div class="col-lg-8">
-                <div class="header__nav">
+                <div class="header__nav text-black">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Главная</a></li>
+                            <li class=""><a href="{{ route("homepage") }}">Главная</a></li>
                             <li><a href="./categories.html">Категории <span class="arrow_carrot-down"></span></a>
                                 <ul class="dropdown">
                                     <li><a href="./categories.html">Categories</a></li>
@@ -134,8 +136,8 @@
 <script src="js/mixitup.min.js"></script>
 <script src="js/jquery.slicknav.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
-
 
 </body>
 

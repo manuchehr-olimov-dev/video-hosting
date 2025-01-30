@@ -36,7 +36,7 @@ body {
 	height: 100%;
 	font-family: "Mulish", sans-serif;
 	-webkit-font-smoothing: antialiased;
-	background: #0b0c2a;
+	background: #ffffff;
 }
 
 h1,
@@ -118,7 +118,7 @@ ol {
 
 .section-title h4,
 .section-title h5 {
-	color: #ffffff;
+	color: #000;
 	font-weight: 600;
 	line-height: 21px;
 	text-transform: uppercase;
@@ -169,7 +169,7 @@ ol {
 	font-size: 13px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #ffffff;
+	color: #000;
 	letter-spacing: 2px;
 }
 
@@ -327,7 +327,7 @@ ol {
 -----------------------*/
 
 .header {
-	background: #070720;
+	background: #ffffff;
 }
 
 .header__logo {
@@ -336,11 +336,13 @@ ol {
 
 .header__logo a {
 	display: inline-block;
+    color: #000;
 }
 
 .header__menu {
 	text-align: center;
 }
+
 
 .header__menu ul li {
 	list-style: none;
@@ -349,13 +351,8 @@ ol {
 	margin-right: 16px;
 }
 
-.header__menu ul li.active a {
-	background: #e53637;
-	color: #ffffff;
-}
-
 .header__menu ul li:hover a {
-	color: #ffffff;
+	color: #000000;
 }
 
 .header__menu ul li:hover .dropdown {
@@ -386,6 +383,7 @@ ol {
 	-webkit-transition: all, 0.3s;
 	-o-transition: all, 0.3s;
 	transition: all, 0.3s;
+
 }
 
 .header__menu ul li .dropdown li {
@@ -402,7 +400,7 @@ ol {
 
 .header__menu ul li a {
 	font-size: 15px;
-	color: #b7b7b7;
+	color: #000000;
 	display: block;
 	font-weight: 700;
 	-webkit-transition: all, 0.5s;
@@ -425,7 +423,7 @@ ol {
 .header__right a {
 	display: inline-block;
 	font-size: 18px;
-	color: #ffffff;
+	color: #000000;
 	margin-right: 30px;
 }
 
@@ -442,7 +440,8 @@ ol {
 -----------------------*/
 
 .hero {
-	padding-top: 50px;
+	padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .hero__items {
@@ -528,94 +527,6 @@ ol {
 	border-radius: 0 4px 4px 0;
 }
 
-.hero__slider.owl-carousel .owl-item.active .hero__text .label {
-	top: 0;
-	opacity: 1;
-}
-
-.hero__slider.owl-carousel .owl-item.active .hero__text h2 {
-	top: 0;
-	opacity: 1;
-}
-
-.hero__slider.owl-carousel .owl-item.active .hero__text p {
-	top: 0;
-	opacity: 1;
-}
-
-.hero__slider.owl-carousel .owl-item.active .hero__text a {
-	top: 0;
-	opacity: 1;
-}
-
-.hero__slider.owl-carousel .owl-dots {
-	position: absolute;
-	left: 0;
-	bottom: 10px;
-	width: 100%;
-	text-align: center;
-}
-
-.hero__slider.owl-carousel .owl-dots button {
-	height: 8px;
-	width: 8px;
-	background: #b7b7b7;
-	border-radius: 50%;
-	margin-right: 10px;
-}
-
-.hero__slider.owl-carousel .owl-dots button.active {
-	background: #ffffff;
-}
-
-.hero__slider.owl-carousel .owl-dots button:last-child {
-	margin-right: 0;
-}
-
-.hero__slider.owl-carousel .owl-nav button {
-	font-size: 36px;
-	height: 66px;
-	width: 66px;
-	background: #0b0c2a;
-	line-height: 66px;
-	text-align: center;
-	color: #ffffff;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-	position: relative;
-	z-index: 1;
-	position: absolute;
-	left: -33px;
-	top: 50%;
-	margin-top: -47px;
-}
-
-.hero__slider.owl-carousel .owl-nav button.owl-next {
-	left: auto;
-	right: -33px;
-}
-
-.hero__slider.owl-carousel .owl-nav button:after {
-	position: absolute;
-	top: 6px;
-	left: 0;
-	right: 0;
-	height: 54px;
-	width: 54px;
-	background: rgba(255, 255, 255, 0.1);
-	content: "";
-	z-index: -1;
-	margin: 0 auto;
-}
-
-.hero__slider.owl-carousel .owl-nav button span {
-	-webkit-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	display: block;
-	z-index: 1;
-}
 
 /*---------------------
   Product
@@ -631,6 +542,7 @@ ol {
 }
 
 .btn__all {
+    color: #000;
 	text-align: right;
 	margin-bottom: 30px;
 }
@@ -683,8 +595,8 @@ ol {
 
 .product__item__pic .view {
 	font-size: 13px;
-	color: #ffffff;
-	background: #3d3d3d;
+    color: #ffffff;
+    background: #3d3d3d;
 	display: inline-block;
 	padding: 2px 10px;
 	border-radius: 4px;
@@ -704,7 +616,7 @@ ol {
 .product__item__text ul li {
 	list-style: none;
 	font-size: 10px;
-	color: #ffffff;
+    color: #000;
 	font-weight: 700;
 	padding: 1px 10px;
 	background: rgba(255, 255, 255, 0.2);
@@ -713,13 +625,13 @@ ol {
 }
 
 .product__item__text h5 a {
-	color: #ffffff;
+    color: #000;
 	font-weight: 700;
 	line-height: 26px;
 }
 
 .product__sidebar .section-title h5 {
-	color: #ffffff;
+    color: #000;
 	font-weight: 600;
 	font-family: "Oswald", sans-serif;
 	line-height: 21px;
@@ -752,7 +664,7 @@ ol {
 .product__sidebar__view .filter__controls li {
 	list-style: none;
 	font-size: 13px;
-	color: #b7b7b7;
+    color: #000;
 	display: inline-block;
 	margin-right: 7px;
 	cursor: pointer;
@@ -2380,4 +2292,56 @@ img{
 }
 .number3{
     font-weight:500;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 75vh;
+    font-size: 18px;
+    background: #fff;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(40%);
+    position: absolute;
+    z-index: -1;
+}
+
+.homepage-slider-watch-button{
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    transition: 0.6s;
+}
+
+.homepage-slider-watch-button:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.swiper-pagination-bullet{
+    background-color: #fff;
+}
+
+.swiper-slide .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 0 20px 30px 20px;
+}
+
+.swiper-slide .text p{
+    font-size: 14px;
 }

@@ -8,19 +8,21 @@ use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
 
 class AuthenticationService
 {
     public function login(LoginRequest $request): string|RedirectResponse
     {
-        if (Auth::attempt($request->validated()->only(['email', 'password']))) {
+        if (Auth::attempt([
+            "email" => $request->validated("email"),
+            "password" => $request->validated("password")
+        ], true)){
             $request->session()->regenerate();
             return redirect()->route("homepage");
         }
 
         return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
+            'message' => 'Что-то пошло не так, попробуйте в другой раз.',
         ]);
 
     }
@@ -30,14 +32,14 @@ class AuthenticationService
         $user = User::query()->create($request->validated());
         if(Auth::attempt([
                             "email" => $request->validated("email"),
-                            "password" => $request->validated("password")])
-        ){
+                            "password" => $request->validated("password")
+        ], true)){
             $request->session()->regenerate();
             return redirect()->route("homepage");
         }
 
         return redirect()->back()->withErrors([
-            "error" => "The provided credentials do not match our records.",
+            'message' => 'Что-то пошло не так, попробуйте в другой раз.',
         ]);
     }
 
