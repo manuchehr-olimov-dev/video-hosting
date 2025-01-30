@@ -1649,7 +1649,7 @@ ol {
 }
 
 .login__form h3 {
-	color: #ffffff;
+	color: #000;
 	font-weight: 700;
 	font-family: "Oswald", sans-serif;
 	margin-bottom: 30px;
@@ -1659,6 +1659,7 @@ ol {
 	position: relative;
 	width: 370px;
 	margin-bottom: 20px;
+    border: 1px solid black;
 }
 
 .login__form form .input__item:before {
@@ -1675,7 +1676,7 @@ ol {
 	height: 50px;
 	width: 100%;
 	font-size: 15px;
-	color: #b7b7b7;
+	color: #000;
 	background: #ffffff;
 	border: none;
 	padding-left: 76px;
@@ -1716,7 +1717,7 @@ ol {
 
 .login__form .forget_pass {
 	font-size: 15px;
-	color: #ffffff;
+	color: #000;
 	display: inline-block;
 	position: absolute;
 	right: 60px;
@@ -1728,13 +1729,14 @@ ol {
 }
 
 .login__register h3 {
-	color: #ffffff;
+	color: #000;
 	font-weight: 700;
 	font-family: "Oswald", sans-serif;
 	margin-bottom: 30px;
 }
 
 .login__register .primary-btn {
+    color: #fff;
 	background: #e53637;
 	padding: 12px 42px;
 }

@@ -47,7 +47,7 @@
                 <div class="col-lg-6">
                     <div class="login__register">
                         <h3>Нету аккаунта?</h3>
-                        <a href="{{route("registration-page")}}" class="primary-btn">Зарегистрироваться сейчас.</a>
+                        <a href="{{route("registration-page")}}" class="primary-btn">Зарегистрироваться сейчас</a>
                     </div>
                 </div>
             </div>
