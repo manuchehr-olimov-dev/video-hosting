@@ -9,7 +9,7 @@
                 </div>
                 <div class="ml-3 w-100">
                     <h4 class="mb-0 mt-0 ">{{ auth()->user()->name }}</h4>
-                    <span>Java Senior Developer</span>
+                    <span>Статус</span>
                     <div class="p-2 mt-2 bg-primary d-flex justify-content-between rounded text-black  stats">
                         <div class="d-flex flex-column">
                             <span class="articles text-black">Articles</span>
@@ -25,7 +25,9 @@
                         </div>
                     </div>
                     <div class="button mt-2 d-flex flex-row align-items-center">
-                        <button class="btn btn-sm btn-outline-primary w-100">Кнопка</button>
+                        @can("enter admin panel")
+                            <a href="{{ route('admin.panel') }}" class="btn btn-sm btn-outline-primary w-100">Админ панель</a>
+                        @endcan
                         <a href="{{ route("logout") }}">
                             <button class="btn btn-sm btn-outline-danger w-100 ml-2">Выйти</button>
                         </a>

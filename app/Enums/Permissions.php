@@ -23,4 +23,8 @@ enum Permissions: string
     case CAN_ADD_VIDEO = "add video";
     case CAN_EDIT_VIDEO = "edit video";
     case CAN_DELETE_VIDEO = "delete video";
+
+    // Admin Panel
+    case CAN_ENTER_TO_ADMIN_PANEL= "enter admin panel";
+
 }
