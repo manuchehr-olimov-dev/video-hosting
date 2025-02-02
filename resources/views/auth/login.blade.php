@@ -33,10 +33,10 @@
                             </div>
                             <div>
                                 @if($errors->any())
-                                    <p class = " text-white w-72">{{ $errors->first() }}</p>
+                                    <p class = " text-black w-72">{{ $errors->first() }}</p>
                                 @endif
                                 @if($message ?? "")
-                                    <p class="outline">{{ $message }}</p>
+                                    <p class="text-black">{{ $message }}</p>
                                 @endif
                             </div>
                             <button type="submit" class="site-btn">Войти сейчас</button>
@@ -69,5 +69,4 @@
 {{--            </div>--}}
         </div>
     </section>
-    <!-- Login Section End -->
 @endsection
